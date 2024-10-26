@@ -12,7 +12,23 @@ Todo o controle e geração de documentação deve e será mantido por esta apli
 - Livewire
 - Flowbite
 
-## Instalação
+## Instalação de Dependências
+
+Para instalar as dependências necessárias para este projeto utilize:
+
+```sh
+composer update
+#ou
+composer install
+```
+
+Além de adicionar as dependências para o Node.JS:
+
+```sh
+npm install
+```
+
+## Execução
 
 Entre na documentação do **[Laravel](https://laravel.com)** e veja como utilizar o Laravel Sail. Alternativamente, adicione o seguinte alias ao seu terminal:
 
