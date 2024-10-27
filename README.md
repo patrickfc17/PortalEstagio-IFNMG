@@ -48,6 +48,7 @@ Para poder construir a imagem correspondente à este projeto do Sail utilize:
 
 ```sh
 sail up --build -d
+
 ```
 
 Logo após a inicialização do Sail, rode as _Migrations_ relativas ao projeto:
