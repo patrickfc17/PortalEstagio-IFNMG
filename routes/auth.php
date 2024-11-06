@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\VerifyEmailController;
+use App\Livewire\Pages\Login;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
@@ -8,8 +10,11 @@ Route::middleware('guest')->group(function () {
     Volt::route('register', 'pages.auth.register')
         ->name('register');
 
-    Volt::route('login', 'pages.auth.login')
+    Volt::route('login', Login::class)
         ->name('login');
+
+    Route::post('signin', AuthController::class)
+        ->name('signin');
 
     Volt::route('forgot-password', 'pages.auth.forgot-password')
         ->name('password.request');

@@ -13,8 +13,12 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        <!-- Livewire -->
+        @livewireStyles
+        @livewireScripts
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-ibm-plex-sans antialiased">
         <div class="min-h-screen bg-gray-100">
             <livewire:layout.navigation />
 
@@ -28,9 +32,10 @@
             @endif
 
             <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+            {{ $slot }}
+
         </div>
+
+        <x-flash-message />
     </body>
 </html>

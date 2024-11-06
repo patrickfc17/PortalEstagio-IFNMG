@@ -24,3 +24,6 @@ package-lock.json
 pnpm-lock.yaml
 yarn.lock
 composer.lock
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
