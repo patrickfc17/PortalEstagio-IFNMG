@@ -16,10 +16,10 @@ export default {
         'ibm-plex-sans': ['IBM Plex Sans', defaultTheme.fontFamily.sans],
       },
       colors: {
-        hellfire: '#FF2020',
-        radiation: '#1AE939',
-        afterlife: '#F5FFFD',
-        purgatory: '#111311',
+        hellfire: '#FF2020', //vermelho
+        radiation: '#1AE939', //verde
+        afterlife: '#F5FFFD', //branco
+        purgatory: '#111311', //preto
       },
     },
   },
