@@ -21,9 +21,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Flash::levels([
-            'success' => 'text-radiation',
+            'success' => 'text-leaf',
             'warning' => 'text-yellow-800',
-            'error' => 'text-hellfire',
+            'error' => 'text-grade',
         ]);
     }
 }

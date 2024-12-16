@@ -2,7 +2,7 @@
 
 <p
     x-show="{{ $error }}"
-    {{ $attributes->merge(['class' => 'text-hellfire text-sm text-justify']) }}
+    {{ $attributes->merge(['class' => 'text-grade text-sm text-justify']) }}
 >
     {{ $slot }}
 </p>

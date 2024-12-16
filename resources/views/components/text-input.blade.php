@@ -2,5 +2,5 @@
 
 <input
     @disabled($disabled)
-    {{ $attributes->merge(['class' => 'border-radiation focus:border-purgatory focus:ring-indigo-500 rounded-md shadow-sm']) }}
+    {{ $attributes->merge(['class' => 'border-leaf focus:border-ink focus:ring-indigo-500 rounded-md shadow-sm']) }}
 />
