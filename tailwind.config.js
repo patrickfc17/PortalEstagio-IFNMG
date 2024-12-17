@@ -17,9 +17,10 @@ export default {
       },
       colors: {
         hellfire: '#FF2020',
-        radiation: '#1AE939',
+        radiation: '#00a65a',
         afterlife: '#F5FFFD',
         purgatory: '#111311',
+
       },
     },
   },
