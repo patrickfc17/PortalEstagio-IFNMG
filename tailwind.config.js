@@ -17,8 +17,8 @@ export default {
       },
       colors: {
         hellfire: '#FF2020', //vermelho
-        radiation: '#1AE939', //verde
-        afterlife: '#F5FFFD', //branco
+        radiation: '#2f9e41', //verde
+        afterlife: '#FFFFFF', //branco
         purgatory: '#111311', //preto
       },
     },

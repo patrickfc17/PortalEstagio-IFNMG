@@ -11,20 +11,17 @@ $logout = function (Logout $logout) {
 ?>
 
 <nav x-data="{ open: false }" class="bg-radiation border-b border-radiation mb-0">
-    <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-7">
         <div class="flex justify-between h-16">
             <div class="flex">
-                <!-- Logo -->
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('Principal') }}" wire:navigate>
-                        <img src="{{ asset('img/logobrancasemfundo.png') }}" class="block h-9 w-auto" />
+               <div class="shrink-0 flex items-center">
+                    <a href="/" wire:navigate>
+                        <img src="{{ asset('img/logo.png') }}" class="block h-9 w-auto" />
                     </a>
                 </div>
 
-                <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('Principal')" :active="request()->routeIs('Principal')" wire:navigate>
+               <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href= / :active="request()->routeIs('Principal')" wire:navigate>
                         {{ __('Principal') }}
                     </x-nav-link>
                     <x-nav-link :href="'#'" :active="request()->routeIs('#')" wire:navigate>
@@ -37,7 +34,6 @@ $logout = function (Logout $logout) {
                         {{ __('Convênios') }}
                     </x-nav-link>
                 </div>
-                <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger" >
@@ -54,7 +50,6 @@ $logout = function (Logout $logout) {
 
                     <x-slot name="content">
 
-                        <!-- New Options -->
                         <x-dropdown-link href="#" onclick="return false;">
                             {{ __('Documentos') }}
                         </x-dropdown-link>
@@ -64,13 +59,6 @@ $logout = function (Logout $logout) {
                         <x-dropdown-link href="#" onclick="return false;">
                             {{ __('Mais') }}
                         </x-dropdown-link>
-
-                        <!-- Authentication -->
-                        <button wire:click="logout" class="w-full text-start">
-                            <x-dropdown-link>
-                                {{ __('Log Out') }}
-                            </x-dropdown-link>
-                        </button>
                     </x-slot>
                 </x-dropdown>
             </div>
@@ -78,7 +66,6 @@ $logout = function (Logout $logout) {
 
             
 
-            <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">
                 <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
@@ -90,7 +77,6 @@ $logout = function (Logout $logout) {
         </div>
     </div>
 
-    <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('Principal')" :active="request()->routeIs('Principal')" wire:navigate>
@@ -100,7 +86,6 @@ $logout = function (Logout $logout) {
 
         </div>
 
-        <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
             @auth
                 <div class="px-4">
@@ -113,7 +98,7 @@ $logout = function (Logout $logout) {
                         {{ __('Profile') }}
                     </x-responsive-nav-link>
 
-                    <!-- New Options for Responsive Menu -->
+                   
                     <x-responsive-nav-link href="#" onclick="return false;">
                         {{ __('Documentos') }}
                     </x-responsive-nav-link>
@@ -124,7 +109,7 @@ $logout = function (Logout $logout) {
                         {{ __('Mais') }}
                     </x-responsive-nav-link>
 
-                    <!-- Authentication -->
+                    
                     <button wire:click="logout" class="w-full text-start">
                         <x-responsive-nav-link>
                             {{ __('Log Out') }}

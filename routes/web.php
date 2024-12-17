@@ -16,4 +16,10 @@ Route::view('profile', 'profile')
 
 Volt::route('passo-a-passo', 'pages.passo-a-passo')
     ->name('passo-a-Passo');
+
+Volt::route('listagem-de-convenio', 'pages.listagem-de-convenio')
+    ->name('listagem-de-convenio');
+
+Volt::route('espaço-de-perguntas-frequentes', 'pages.espaço-de-perguntas-frequentes')
+    ->name('espaço-de-perguntas-frequentes');
 require __DIR__ . '/auth.php';
