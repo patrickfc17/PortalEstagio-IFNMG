@@ -1,5 +1,5 @@
 <div>
-    <header class="text-white shadow-lg bg-radiation">
+    <header class="text-white shadow-lg bg-leaf">
       <div class="flex items-center justify-between max-w-screen-xl px-4 py-4 mx-auto">
         <div class="flex items-center space-x-4">
           <img src="https://via.placeholder.com/50" alt="Logo IFNMG" class="h-12">
@@ -23,7 +23,7 @@
 
     <section class="py-16 bg-[#F5FFFD]">
         <div class="max-w-screen-xl px-4 mx-auto text-center">
-          <h1 class="mb-6 text-4xl font-extrabold text-radiation">Carga Horária por Curso</h1>
+          <h1 class="mb-6 text-4xl font-extrabold text-leaf">Carga Horária por Curso</h1>
           <p class="mb-8 text-lg text-gray-700">
             Cada um dos cursos oferecidos pelo IFNMG - Almenara tem sua carga horária de estágio definida em seus projetos pedagógicos. Clique no curso desejado para acessar a página correspondente e mais informações.
           </p>
@@ -67,7 +67,7 @@
       </style>
 
       <div class="max-w-screen-xl px-4 mx-auto">
-        <h2 class="mb-8 text-3xl font-bold text-center text-radiation">Cursos de Graduação</h2>
+        <h2 class="mb-8 text-3xl font-bold text-center text-leaf">Cursos de Graduação</h2>
         <table>
           <thead>
             <tr>
@@ -91,7 +91,7 @@
           </tbody>
         </table>
 
-        <h2 class="mt-12 mb-8 text-3xl font-bold text-center text-radiation">Cursos Técnicos</h2>
+        <h2 class="mt-12 mb-8 text-3xl font-bold text-center text-leaf">Cursos Técnicos</h2>
         <table>
           <thead>
             <tr>

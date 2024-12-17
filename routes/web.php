@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
-use Livewire\Volt\Volt;
 
 Volt::route('/', 'pages.pagina-inicial');
 
