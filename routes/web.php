@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
-Volt::route('/', 'pages.pagina-inicial');
+Volt::route('/', 'pages.pagina-inicial')
+    ->name('/');
 
 Route::view('Principal', 'Principal')
     ->middleware('auth')

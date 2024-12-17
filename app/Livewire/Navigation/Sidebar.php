@@ -11,7 +11,14 @@ class Sidebar extends Component
     public function mount(): void
     {
         $this->items = [
-            'Dashboard' => 'components.svg.dashboard',
+            'Dashboard' => [
+                'route' => '',
+                'icon' => 'components.svg.dashboard'
+            ],
+            'Log Out' => [
+                'route' => '/',
+                'icon' => 'components.svg.home'
+            ],
         ];
     }
 
