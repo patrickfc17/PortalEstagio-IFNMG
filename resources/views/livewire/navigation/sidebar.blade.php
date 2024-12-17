@@ -2,8 +2,9 @@
     <nav class="flex flex-col h-full gap-8 px-3 py-4 overflow-y-auto bg-leaf">
         <h1 class="mt-4 text-3xl font-bold text-center text-paper">{{ config('app.name') }}</h1>
         <ul class="space-y-2 font-medium">
-            @foreach ($items as $name => $icon)
-                <livewire:navigation.nav-item name="{{ $name }}" icon="{{ $icon }}" />
+            @foreach ($items as $name => $props)
+                @php $props = (object) $props; @endphp
+                <livewire:navigation.nav-item name="{{ $name }}" icon="{{ $props->icon }}" link="{{ $props->route ? route($props->route) : '#' }}" />
             @endforeach
         </ul>
     </nav>

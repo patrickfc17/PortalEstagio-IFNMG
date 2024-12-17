@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
-Route::view('/', 'welcome');
+Volt::route('/', 'pages.pagina-inicial')
+    ->name('/');
 
 Route::view('Principal', 'Principal')
     ->middleware('auth')
@@ -13,7 +14,6 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-
 Volt::route('passo-a-passo', 'pages.passo-a-passo')
     ->name('passo-a-Passo');
 
@@ -22,6 +22,9 @@ Volt::route('convenios', 'pages.listagem-de-convenio')
 
 Volt::route('faqs', 'pages.espaço-de-perguntas-frequentes')
     ->name('espaço-de-perguntas-frequentes');
+
+Volt::route('ch-cursos', 'pages.exibicao-curso')
+    ->name('ch-cursos');
 
 require __DIR__ . '/auth.php';
 
