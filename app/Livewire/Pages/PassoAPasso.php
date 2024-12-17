@@ -8,8 +8,8 @@ use Livewire\Component;
 
 class PassoAPasso extends Component
 {
-    #[Layout('layouts.guest')]
     #[Title('Passo a Passo')]
+    #[Layout('layouts.guest')]
     public function render()
     {
         return view('livewire.pages.passo-a-passo');

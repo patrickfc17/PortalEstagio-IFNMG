@@ -3,7 +3,7 @@
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7">
                 <h1
-                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
+                    class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
                     Lista de Convênios</h1>
                 <p
                     class="max-w-2xl mb-6 font-light text-ink lg:mb-8 md:text-lg lg:text-xl dark:text-paper-400">
@@ -16,13 +16,13 @@
             </div>
         </div>
         <h1
-            class="max-w-2xl mb-4 text-4xl font-medium tracking-tight leading-none md:text-3xl xl:text-6xl grid max-w-screen-xl px-4 py-4 mx-auto">
+            class="grid max-w-2xl max-w-screen-xl px-4 py-4 mx-auto mb-4 text-4xl font-medium leading-none tracking-tight md:text-3xl xl:text-6xl">
             Encontre Parceiros Conveniados</h1>
 
-        <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
-            <div class="bg-paper relative shadow-md shadow-ink sm:rounded-lg overflow-hidden">
+        <div class="max-w-screen-xl px-4 pb-12 mx-auto lg:px-12">
+            <div class="relative overflow-hidden shadow-md bg-paper shadow-ink sm:rounded-lg">
                 <div
-                    class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
+                    class="flex flex-col items-center justify-between p-4 space-y-3 md:flex-row md:space-y-0 md:space-x-4">
                     <div class="w-full md:w-1/2">
                         <form class="flex items-center">
                             <label for="simple-search" class="sr-only">Search</label>
@@ -36,18 +36,18 @@
                                     </svg>
                                 </div>
                                 <input type="text" id="simple-search"
-                                    class="bg-paper-50 border border-paper-300 text-paper-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2 dark:bg-paper-700 dark:border-paper-600 dark:placeholder-paper-400 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                    class="block w-full p-2 pl-10 text-sm border rounded-lg bg-paper-50 border-paper-300 text-paper-900 focus:ring-primary-500 focus:border-primary-500 dark:bg-paper-700 dark:border-paper-600 dark:placeholder-paper-400 dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                     placeholder="Search" required="">
                             </div>
                         </form>
                     </div>
-                    <div class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
-                        <div class="flex items-center space-x-3 w-full md:w-auto">
+                    <div class="flex flex-col items-stretch justify-end flex-shrink-0 w-full space-y-2 md:w-auto md:flex-row md:space-y-0 md:items-center md:space-x-3">
+                        <div class="flex items-center w-full space-x-3 md:w-auto">
                             <button id="filterDropdownButton" data-dropdown-toggle="filterDropdown"
-                                class="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-paper-900 focus:outline-none bg-paper rounded-lg border border-paper-200 hover:bg-paper-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-paper-200 dark:focus:ring-paper-700 dark:bg-paper-800 dark:text-paper-400 dark:border-paper-600 dark:hover:text-white dark:hover:bg-paper-700"
+                                class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium border rounded-lg md:w-auto text-paper-900 focus:outline-none bg-paper border-paper-200 hover:bg-paper-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-paper-200 dark:focus:ring-paper-700 dark:bg-paper-800 dark:text-paper-400 dark:border-paper-600 dark:hover:text-white dark:hover:bg-paper-700"
                                 type="button">
                                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                    class="h-4 w-4 mr-2 text-paper-400" viewbox="0 0 20 20" fill="currentColor">
+                                    class="w-4 h-4 mr-2 text-paper-400" viewbox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z"
                                         clip-rule="evenodd" />
@@ -60,47 +60,47 @@
                                 </svg>
                             </button>
                             <div id="filterDropdown"
-                                class="z-10 hidden w-48 p-3 bg-paper rounded-lg shadow">
+                                class="z-10 hidden w-48 p-3 rounded-lg shadow bg-paper">
                                 <ul class="space-y-2 text-sm" aria-labelledby="filterDropdownButton">
                                     <li class="flex items-center">
                                         <input id="apple" type="checkbox" value=""
-                                            class="w-4 h-4 bg-paper-100 border-paper-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
+                                            class="w-4 h-4 rounded bg-paper-100 border-paper-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
                                         <label for="apple"
                                             class="ml-2 text-sm font-medium text-paper-900 dark:text-paper-100">Agropecuaria</label>
                                     </li>
                                     <li class="flex items-center">
                                         <input id="fitbit" type="checkbox" value=""
-                                            class="w-4 h-4 bg-paper-100 border-paper-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
+                                            class="w-4 h-4 rounded bg-paper-100 border-paper-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
                                         <label for="fitbit"
                                             class="ml-2 text-sm font-medium text-paper-900 dark:text-paper-100">Administração</label>
                                     </li>
                                     <li class="flex items-center">
                                         <input id="razor" type="checkbox" value=""
-                                            class="w-4 h-4 bg-paper-100 border-paper-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
+                                            class="w-4 h-4 rounded bg-paper-100 border-paper-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
                                         <label for="razor"
                                             class="ml-2 text-sm font-medium text-paper-900 dark:text-paper-100">Informatica</label>
                                     </li>
                                     <li class="flex items-center">
                                         <input id="nikon" type="checkbox" value=""
-                                            class="w-4 h-4 bg-paper-100 border-paper-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
+                                            class="w-4 h-4 rounded bg-paper-100 border-paper-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
                                         <label for="nikon"
                                             class="ml-2 text-sm font-medium text-paper-900 dark:text-paper-100">Zootecnia</label>
                                     </li>
                                     <li class="flex items-center">
                                         <input id="benq" type="checkbox" value=""
-                                            class="w-4 h-4 bg-paper-100 border-paper-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
+                                            class="w-4 h-4 rounded bg-paper-100 border-paper-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
                                         <label for="benq"
                                             class="ml-2 text-sm font-medium text-paper-900 dark:text-paper-100">Analise e Desenvolvimento de Sistemas</label>
                                     </li>
                                     <li class="flex items-center">
                                         <input id="benq" type="checkbox" value=""
-                                            class="w-4 h-4 bg-paper-100 border-paper-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
+                                            class="w-4 h-4 rounded bg-paper-100 border-paper-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
                                         <label for="benq"
                                             class="ml-2 text-sm font-medium text-paper-900 dark:text-paper-100">Engenharia Agronomica</label>
                                     </li>
                                     <li class="flex items-center">
                                         <input id="benq" type="checkbox" value=""
-                                            class="w-4 h-4 bg-paper-100 border-paper-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
+                                            class="w-4 h-4 rounded bg-paper-100 border-paper-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-paper-700 focus:ring-2 dark:bg-paper-600 dark:border-paper-500">
                                         <label for="benq"
                                             class="ml-2 text-sm font-medium text-paper-900 dark:text-paper-100">Processos Gerencias</label>
                                     </li>
@@ -111,9 +111,9 @@
                 </div>
                 <div class="overflow-x-auto">
                     <table class="w-full text-sm text-left rtl:text-right text-ink">
-                        <thead class="text-xs text-ink uppercase">
+                        <thead class="text-xs uppercase text-ink">
                             <tr>
-                                <th scope="col" class="px-6 py-3">
+                                <th scope="col" class="px-3 py-3">
                                     <div class="flex items-center">
                                         Empresa
                                         <a href="#"><svg class="w-3 h-3 ms-1.5 " aria-hidden="true"
@@ -124,7 +124,7 @@
                                             </svg></a>
                                     </div>
                                 </th>
-                                <th scope="col" class="px-12 py-3">
+                                <th scope="col" class="px-4 py-3">
                                     <div class="flex items-center">
                                         Curso
                                         <a href="#"><svg class="w-3 h-3 ms-1.5" aria-hidden="true"
@@ -135,7 +135,7 @@
                                             </svg></a>
                                     </div>
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th scope="col" class="px-4 py-3">
                                     <div class="flex items-center">
                                         Vagas
                                         <a href="#"><svg class="w-3 h-3 ms-1.5" aria-hidden="true"
@@ -154,8 +154,8 @@
                                     class="px-4 py-3 font-medium text-paper-900 whitespace-nowrap">
                                   Genesius</th>
                                 <td class="px-4 py-3">Análise e Desenvolvimento de Sistemas</td>
-                                <td class="px-12 py-3">5</td>
-                                <td class="px-4 py-3 flex items-center justify-end">
+                                <td class="px-4 py-3">5</td>
+                                <td class="flex items-center justify-end px-4 py-3">
                                     <button id="apple-imac-27-dropdown-button"
                                         data-dropdown-toggle="apple-imac-27-dropdown"
                                         class="inline-flex items-center p-0.5 text-sm font-medium text-center text-paper-500 hover:text-paper-800 rounded-lg focus:outline-none dark:text-paper-400 dark:hover:text-paper-100"
@@ -167,21 +167,21 @@
                                         </svg>
                                     </button>
                                     <div id="apple-imac-27-dropdown"
-                                        class="hidden z-10 w-44 bg-paper rounded divide-y divide-paper-100 shadow dark:bg-paper-700 dark:divide-paper-600">
+                                        class="z-10 hidden divide-y rounded shadow w-44 bg-paper divide-paper-100 dark:bg-paper-700 dark:divide-paper-600">
                                         <ul class="py-1 text-sm text-paper-700 dark:text-paper-200"
                                             aria-labelledby="apple-imac-27-dropdown-button">
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
                                             </li>
                                         </ul>
                                         <div class="py-1">
                                             <a href="#"
-                                                class="block py-2 px-4 text-sm text-grade hover:bg-paper">Delete</a>
+                                                class="block px-4 py-2 text-sm text-grade hover:bg-paper">Delete</a>
                                         </div>
                                     </div>
                                 </td>
@@ -191,8 +191,8 @@
                                     class="px-4 py-3 font-medium text-paper-900 whitespace-nowrap">
                                     Cerealista Magno</th>
                                 <td class="px-4 py-3">Agropecuaria</td>
-                                <td class="px-12 py-3">4</td>
-                                <td class="px-4 py-3 flex items-center justify-end">
+                                <td class="px-4 py-3">4</td>
+                                <td class="flex items-center justify-end px-4 py-3">
                                     <button id="apple-imac-20-dropdown-button"
                                         data-dropdown-toggle="apple-imac-20-dropdown"
                                         class="inline-flex items-center p-0.5 text-sm font-medium text-center text-paper-500 hover:text-paper-800 rounded-lg focus:outline-none dark:text-paper-400 dark:hover:text-paper-100"
@@ -204,21 +204,21 @@
                                         </svg>
                                     </button>
                                     <div id="apple-imac-20-dropdown"
-                                        class="hidden z-10 w-44 bg-paper rounded divide-y divide-paper-100 shadow dark:bg-paper-700 dark:divide-paper-600">
+                                        class="z-10 hidden divide-y rounded shadow w-44 bg-paper divide-paper-100 dark:bg-paper-700 dark:divide-paper-600">
                                         <ul class="py-1 text-sm text-paper-700 dark:text-paper-200"
                                             aria-labelledby="apple-imac-20-dropdown-button">
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
                                             </li>
                                         </ul>
                                         <div class="py-1">
                                             <a href="#"
-                                                class="block py-2 px-4 text-sm text-grade hover:bg-paper">Delete</a>
+                                                class="block px-4 py-2 text-sm text-grade hover:bg-paper">Delete</a>
                                         </div>
                                     </div>
                                 </td>
@@ -228,8 +228,8 @@
                                     class="px-4 py-3 font-medium text-paper-900 whitespace-nowrap">
                                    Info Projectk</th>
                                 <td class="px-4 py-3">Informática</td>
-                                <td class="px-12 py-3">4</td>
-                                <td class="px-4 py-3 flex items-center justify-end">
+                                <td class="px-4 py-3">4</td>
+                                <td class="flex items-center justify-end px-4 py-3">
                                     <button id="apple-iphone-14-dropdown-button"
                                         data-dropdown-toggle="apple-iphone-14-dropdown"
                                         class="inline-flex items-center p-0.5 text-sm font-medium text-center text-paper-500 hover:text-paper-800 rounded-lg focus:outline-none dark:text-paper-400 dark:hover:text-paper-100"
@@ -241,21 +241,21 @@
                                         </svg>
                                     </button>
                                     <div id="apple-iphone-14-dropdown"
-                                        class="hidden z-10 w-44 bg-paper rounded divide-y divide-paper-100 shadow dark:bg-paper-700 dark:divide-paper-600">
+                                        class="z-10 hidden divide-y rounded shadow w-44 bg-paper divide-paper-100 dark:bg-paper-700 dark:divide-paper-600">
                                         <ul class="py-1 text-sm text-paper-700 dark:text-paper-200"
                                             aria-labelledby="apple-iphone-14-dropdown-button">
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
                                             </li>
                                         </ul>
                                         <div class="py-1">
                                             <a href="#"
-                                                class="block py-2 px-4 text-sm text-grade hover:bg-paper">Delete</a>
+                                                class="block px-4 py-2 text-sm text-grade hover:bg-paper">Delete</a>
                                         </div>
                                     </div>
                                 </td>
@@ -265,8 +265,8 @@
                                     class="px-4 py-3 font-medium text-paper-900 whitespace-nowrap">
                                     Fazendas</th>
                                 <td class="px-4 py-3">Zootecnia</td>
-                                    <td class="px-12 py-3">4</td>                                
-                                    <td class="px-4 py-3 flex items-center justify-end">
+                                    <td class="px-4 py-3">4</td>
+                                    <td class="flex items-center justify-end px-4 py-3">
                                     <button id="apple-ipad-air-dropdown-button"
                                         data-dropdown-toggle="apple-ipad-air-dropdown"
                                         class="inline-flex items-center p-0.5 text-sm font-medium text-center text-paper-500 hover:text-paper-800 rounded-lg focus:outline-none dark:text-paper-400 dark:hover:text-paper-100"
@@ -278,21 +278,21 @@
                                         </svg>
                                     </button>
                                     <div id="apple-ipad-air-dropdown"
-                                        class="hidden z-10 w-44 bg-paper rounded divide-y divide-paper-100 shadow dark:bg-paper-700 dark:divide-paper-600">
+                                        class="z-10 hidden divide-y rounded shadow w-44 bg-paper divide-paper-100 dark:bg-paper-700 dark:divide-paper-600">
                                         <ul class="py-1 text-sm text-paper-700 dark:text-paper-200"
                                             aria-labelledby="apple-ipad-air-dropdown-button">
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
                                             </li>
                                         </ul>
                                         <div class="py-1">
                                             <a href="#"
-                                                class="block py-2 px-4 text-sm text-grade hover:bg-paper">Delete</a>
+                                                class="block px-4 py-2 text-sm text-grade hover:bg-paper">Delete</a>
                                         </div>
                                     </div>
                                 </td>
@@ -302,8 +302,8 @@
                                     class="px-4 py-3 font-medium text-paper-900 whitespace-nowrap">
                                     Escritorio de Contabilidade</th>
                                 <td class="px-4 py-3">Administração</td>
-                                <td class="px-12 py-3">4</td>
-                                <td class="px-4 py-3 flex items-center justify-end">
+                                <td class="px-4 py-3">4</td>
+                                <td class="flex items-center justify-end px-4 py-3">
                                     <button id="xbox-series-s-dropdown-button"
                                         data-dropdown-toggle="xbox-series-s-dropdown"
                                         class="inline-flex items-center p-0.5 text-sm font-medium text-center text-paper-500 hover:text-paper-800 rounded-lg focus:outline-none dark:text-paper-400 dark:hover:text-paper-100"
@@ -315,21 +315,21 @@
                                         </svg>
                                     </button>
                                     <div id="xbox-series-s-dropdown"
-                                        class="hidden z-10 w-44 bg-paper rounded divide-y divide-paper-100 shadow dark:bg-paper-700 dark:divide-paper-600">
+                                        class="z-10 hidden divide-y rounded shadow w-44 bg-paper divide-paper-100 dark:bg-paper-700 dark:divide-paper-600">
                                         <ul class="py-1 text-sm text-paper-700 dark:text-paper-200"
                                             aria-labelledby="xbox-series-s-dropdown-button">
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
                                             </li>
                                         </ul>
                                         <div class="py-1">
                                             <a href="#"
-                                                class="block py-2 px-4 text-sm text-grade hover:bg-paper">Delete</a>
+                                                class="block px-4 py-2 text-sm text-grade hover:bg-paper">Delete</a>
                                         </div>
                                     </div>
                                 </td>
@@ -339,8 +339,8 @@
                                     class="px-4 py-3 font-medium text-paper-900 whitespace-nowrap">
                                     AgroMax</th>
                                 <td class="px-4 py-3">Engenharia Agronomica</td>
-                                <td class="px-12 py-3">4</td>
-                                <td class="px-4 py-3 flex items-center justify-end">
+                                <td class="px-4 py-3">4</td>
+                                <td class="flex items-center justify-end px-4 py-3">
                                     <button id="playstation-5-dropdown-button"
                                         data-dropdown-toggle="playstation-5-dropdown"
                                         class="inline-flex items-center p-0.5 text-sm font-medium text-center text-paper-500 hover:text-paper-800 rounded-lg focus:outline-none dark:text-paper-400 dark:hover:text-paper-100"
@@ -352,21 +352,21 @@
                                         </svg>
                                     </button>
                                     <div id="playstation-5-dropdown"
-                                        class="hidden z-10 w-44 bg-paper rounded divide-y divide-paper-100 shadow dark:bg-paper-700 dark:divide-paper-600">
+                                        class="z-10 hidden divide-y rounded shadow w-44 bg-paper divide-paper-100 dark:bg-paper-700 dark:divide-paper-600">
                                         <ul class="py-1 text-sm text-paper-700 dark:text-paper-200"
                                             aria-labelledby="playstation-5-dropdown-button">
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
                                             </li>
                                         </ul>
                                         <div class="py-1">
                                             <a href="#"
-                                                class="block py-2 px-4 text-sm text-grade hover:bg-paper">Delete</a>
+                                                class="block px-4 py-2 text-sm text-grade hover:bg-paper">Delete</a>
                                         </div>
                                     </div>
                                 </td>
@@ -377,8 +377,8 @@
                                     Escritorio de Contabilidade
                                 </th>
                                 <td class="px-4 py-3">Processo Gerencias</td>
-                                <td class="px-12 py-3">4</td>
-                                <td class="px-4 py-3 flex items-center justify-end">
+                                <td class="px-4 py-3">4</td>
+                                <td class="flex items-center justify-end px-4 py-3">
                                     <button id="xbox-series-x-dropdown-button"
                                         data-dropdown-toggle="xbox-series-x-dropdown"
                                         class="inline-flex items-center p-0.5 text-sm font-medium text-center text-paper-500 hover:text-paper-800 rounded-lg focus:outline-none dark:text-paper-400 dark:hover:text-paper-100"
@@ -390,21 +390,21 @@
                                         </svg>
                                     </button>
                                     <div id="xbox-series-x-dropdown"
-                                        class="hidden z-10 w-44 bg-paper rounded divide-y divide-paper-100 shadow dark:bg-paper-700 dark:divide-paper-600">
+                                        class="z-10 hidden divide-y rounded shadow w-44 bg-paper divide-paper-100 dark:bg-paper-700 dark:divide-paper-600">
                                         <ul class="py-1 text-sm text-paper-700 dark:text-paper-200"
                                             aria-labelledby="xbox-series-x-dropdown-button">
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Show</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block py-2 px-4 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
+                                                    class="block px-4 py-2 hover:bg-paper-100 dark:hover:bg-paper-600 dark:hover:text-white">Edit</a>
                                             </li>
                                         </ul>
                                         <div class="py-1">
                                             <a href="#"
-                                                class="block py-2 px-4 text-sm text-grade hover:bg-paper">Delete</a>
+                                                class="block px-4 py-2 text-sm text-grade hover:bg-paper">Delete</a>
                                         </div>
                                     </div>
                                 </td>
@@ -412,7 +412,7 @@
                         </tbody>
                     </table>
                 </div>
-                <nav class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-3 md:space-y-0 p-4"
+                <nav class="flex flex-col items-start justify-between p-4 space-y-3 md:flex-row md:items-center md:space-y-0"
                     aria-label="Table navigation">
                     <span class="text-sm font-normal text-paper-500 dark:text-paper-400">
                         Showing
@@ -435,23 +435,23 @@
                         </li>
                         <li>
                             <a href="#"
-                                class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-leaf bg-paper border border-paper-300 hover:bg-paper-100 hover:text-paper-700">1</a>
+                                class="flex items-center justify-center px-3 py-2 text-sm leading-tight border text-leaf bg-paper border-paper-300 hover:bg-paper-100 hover:text-paper-700">1</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-leaf bg-paper border border-paper-300 hover:bg-paper-100 hover:text-paper-700">2</a>
+                                class="flex items-center justify-center px-3 py-2 text-sm leading-tight border text-leaf bg-paper border-paper-300 hover:bg-paper-100 hover:text-paper-700">2</a>
                         </li>
                         <li>
                             <a href="#" aria-current="page"
-                                class="flex items-center justify-center text-sm z-10 py-2 px-3 leading-tight text-leaf bg-primary-50 border border-primary-300 hover:bg-primary-100 hover:text-primary-700">3</a>
+                                class="z-10 flex items-center justify-center px-3 py-2 text-sm leading-tight border text-leaf bg-primary-50 border-primary-300 hover:bg-primary-100 hover:text-primary-700">3</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-leaf bg-paper border border-paper-300 hover:bg-paper-100 hover:text-paper-700">...</a>
+                                class="flex items-center justify-center px-3 py-2 text-sm leading-tight border text-leaf bg-paper border-paper-300 hover:bg-paper-100 hover:text-paper-700">...</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-leaf bg-paper border border-paper-300 hover:bg-paper-100 hover:text-paper-700">100</a>
+                                class="flex items-center justify-center px-3 py-2 text-sm leading-tight border text-leaf bg-paper border-paper-300 hover:bg-paper-100 hover:text-paper-700">100</a>
                         </li>
                         <li>
                             <a href="#"
