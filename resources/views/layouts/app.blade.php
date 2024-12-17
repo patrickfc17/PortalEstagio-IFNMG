@@ -30,6 +30,6 @@
             <x-flash-message />
         </main>
 
-        <livewire:navigation.footer />
+        <livewire:navigation.footer class="col-span-12 col-start-1 row-span-2 lg:col-start-3 lg:col-span-8 xl:col-start-2 row-start-11 xl:col-span-7" />
     </body>
 </html>

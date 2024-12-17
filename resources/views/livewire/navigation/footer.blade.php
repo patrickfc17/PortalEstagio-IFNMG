@@ -1,4 +1,4 @@
-<footer class="col-span-12 col-start-1 row-span-2 lg:col-start-3 lg:col-span-8 xl:col-start-2 row-start-11 xl:col-span-7 bg-ink">
+<footer class="{{ $classes }} bg-ink">
     <div class="p-[2%] sm:flex sm:items-center sm:justify-between">
         <a href="/" class="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse">
             <img src="{{ asset('img/logo-ifnmg.png') }}" class="h-8 text-paper" alt="Logo IFNMG" />
