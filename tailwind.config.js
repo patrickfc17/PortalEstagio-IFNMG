@@ -16,10 +16,21 @@ export default {
         'ibm-plex-sans': ['IBM Plex Sans', defaultTheme.fontFamily.sans],
       },
       colors: {
-        hellfire: '#FF2020', //vermelho
-        radiation: '#2f9e41', //verde
-        afterlife: '#FFFFFF', //branco
-        purgatory: '#111311', //preto
+        grade:  '#FF2020',
+        leaf:   '#03D216',
+        paper:  '#F5FFFD',
+        ink:    '#111311',
+      },
+      fontStyle: {
+        oblique: 'oblique',
+      },
+      fontSize: {
+        sm:     '12px',
+        md:     '14px',
+        lg:     '16px',
+        xl:     '20px',
+        '2xl':  '24px',
+        '3xl':  '32px',
       },
     },
   },

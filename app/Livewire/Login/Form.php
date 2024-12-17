@@ -19,9 +19,9 @@ class Form extends Component
 
     public LoginForm $form;
 
-    public function mount(string $class, string $title): void
+    public function mount(string $title, string $class = '', bool $omitWelcome = false): void
     {
-        $this->welcome = 'Bem-Vindo!';
+        !$omitWelcome && $this->welcome = 'Bem-Vindo!';
         $this->title = $title;
         $this->classes = $class;
 

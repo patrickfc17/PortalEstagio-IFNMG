@@ -1,12 +1,12 @@
 <section class="{{ $classes }}">
     <div class="grid-col-span-1 grid-row-span-1 flex justify-center items-end">
-        <h1 class="h-fit w-full xl:w-2/3 text-xl 2xl:text-3xl text-radiation font-semibold text-center">
+        <h1 class="h-fit w-full xl:w-2/3 text-xl 2xl:text-3xl text-leaf font-semibold text-center">
             {{ $welcome }}
             <br />
             {{ $title }}
         </h1>
     </div>
-    <form class="w-11/12 sm:w-3/5 xl:w-4/5 min-h-fit h-full lg:h-1/2 col-span-1 row-span-3 flex flex-col gap-4 2xl:gap-8 justify-center mx-auto border border-radiation px-4 lg:px-12 2xl:px-16 py-20 lg:py-0 rounded" method="POST" action="{{ route('signin') }}">
+    <form class="w-11/12 sm:w-3/5 xl:w-4/5 min-h-fit h-full lg:h-1/2 col-span-1 row-span-3 flex flex-col gap-4 2xl:gap-8 justify-center mx-auto border border-leaf px-4 lg:px-12 2xl:px-16 py-20 lg:py-0 rounded" wire:submit="login">
         @csrf
 
         <div x-data="{ email: '' }">

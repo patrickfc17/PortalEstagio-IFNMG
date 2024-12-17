@@ -5,11 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name') . ($title ? " - $title" : '') }}</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="{{ asset('img/logo-ifnmg.png') }}" type="image/x-icon" />
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -18,24 +21,15 @@
         @livewireStyles
         @livewireScripts
     </head>
-    <body class="font-ibm-plex-sans antialiased">
-        <div class="min-h-screen bg-afterlife">
-            <livewire:layout.navigation />
+    <body class="grid min-h-screen grid-cols-8 antialiased grid-rows-12 min-w-screen font-ibm-plex-sans bg-paper">
+        <livewire:navigation.sidebar />
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-afterlife shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
-
-            <!-- Page Content -->
+        <main class="col-span-12 col-start-1 row-start-1 xl:col-span-7 lg:col-start-3 xl:col-start-2 row-span-10 lg:col-span-8">
             {{ $slot }}
 
-        </div>
+            <x-flash-message />
+        </main>
 
-        <x-flash-message />
+        <livewire:navigation.footer />
     </body>
 </html>
