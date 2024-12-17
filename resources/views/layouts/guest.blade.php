@@ -5,23 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name') . (" - $title" ?? '') }}</title>
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-        <!-- Livewire -->
-        @livewireStyles
-    @livewireScripts
     </head>
-    <body class="font-ibm-plex-sans text-gray-900 antialiased bg-afterlife">
-        {{ $slot }}
+    <body class="relative grid min-h-screen grid-cols-1 font-sans antialiased bg-paper auto-rows-[minmax(5%,_max-content)_85%_minmax(10%,_max-content)]">
+        <livewire:layout.navigation class="row-start-1 row-end-2" />
 
-        <x-flash-message />
+        <main>
+            {{ $slot }}
+        </main>
+
+        <livewire:navigation.footer class="w-full" />
     </body>
 </html>
