@@ -4,7 +4,7 @@
             <img src={{ asset('img/perguntas.png') }} class="w-60 h-auto mt-10">
         </div>
         <div id="accordion-color" class="w-full" data-accordion="collapse"
-            data-active-classes="bg-afterlife text-radiation" data-inactive-classes="text-purgatory">
+            data-active-classes="bg-paper text-leaf" data-inactive-classes="text-ink">
             <h2 id="accordion-open-heading-1 ">
                 <button type="button"
                     class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3"

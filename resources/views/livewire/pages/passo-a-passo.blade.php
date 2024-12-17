@@ -1,12 +1,12 @@
 <div>
-    <section class="bg-afterlife">
+    <section class="bg-paper">
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7">
                 <h1
                     class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
                     Passo a Passo</h1>
                 <p
-                    class="max-w-2xl mb-6 font-light text-afterlife-500 lg:mb-8 md:text-lg lg:text-xl dark:text-afterlife-400">
+                    class="max-w-2xl mb-6 font-light text-paper-500 lg:mb-8 md:text-lg lg:text-xl dark:text-paper-400">
                     O processo para realização do estágio é composto por
                     uma série de passos que devem ser seguidos adequadamente.</p>
             </div>
@@ -14,11 +14,11 @@
                 <img src="{{ asset('img/imagempassoapasso.png') }}" alt="mockup">
             </div>
         </div>
-        <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-afterlife text-radiation"
-            data-inactive-classes="text-purgatory">
+        <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-paper text-leaf"
+            data-inactive-classes="text-ink">
             <h2 id="accordion-color-heading-1">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-purgatory border border-b-0 border-purgatory-200 focus:ring-4 focus:ring-purgatory-200 hover:bg-afterlife gap-3"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-ink border border-b-0 border-ink-200 focus:ring-4 focus:ring-ink-200 hover:bg-paper gap-3"
                     data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                     aria-controls="accordion-color-body-1">
                     <span>1º Passo - Matrícula
@@ -31,17 +31,17 @@
                 </button>
             </h2>
             <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
-                <div class="p-5 border border-b-0 border-purgatory-200">
-                    <p class="mb-2 text-purgatory dark:text-purgatory-400">A matricula é o ponto de partida do seu
+                <div class="p-5 border border-b-0 border-ink-200">
+                    <p class="mb-2 text-ink dark:text-ink-400">A matricula é o ponto de partida do seu
                         estágio, para isso você deve preencher a <a href="/"
-                            class="text-purgatory font-text italic font-medium hover:text-radiation ">ficha de
+                            class="text-ink font-text italic font-medium hover:text-leaf ">ficha de
                             matricula</a> e entrega-la na secretária. A secretaria irá avaliar a sua matrícula de
                         estágio de encaminhará o para o núcleo de estágio.</p>
                 </div>
             </div>
             <h2 id="accordion-color-heading-2">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-purgatory border border-b-0 border-purgatory-200 focus:ring-4 focus:ring-purgatory-200 hover:bg-afterlife gap-3"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-ink border border-b-0 border-ink-200 focus:ring-4 focus:ring-ink-200 hover:bg-paper gap-3"
                     data-accordion-target="#accordion-color-body-2" aria-expanded="false"
                     aria-controls="accordion-color-body-2">
                     <span>2º Passo - Encontrar local para estagiar
@@ -54,36 +54,36 @@
                 </button>
             </h2>
             <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
-                <div class="p-5 border border-b-0 border-purgatory-200 dark:border-purgatory-700">
-                    <p class="mb-2 text-purgatory dark:text-purgatory-400">Uma vez realizada a mótricula, você
+                <div class="p-5 border border-b-0 border-ink-200 dark:border-ink-700">
+                    <p class="mb-2 text-ink dark:text-ink-400">Uma vez realizada a mótricula, você
                         deverá procurar um local onde realizará o estágio. É de sua resabilidade como aluno
                         encontrar uma instituição privada. publica, ou um professional que aceite-o como estagiário
                         (a). Para ajuda-lo a encontrar um local, você pode consultar a lista de
                         <a href="/"
-                            class="text-purgatory font-text italic font-medium hover:text-radiation ">instituições
+                            class="text-ink font-text italic font-medium hover:text-leaf ">instituições
                             convéniadas</a>. Você também é livre para entrar em contato com outras instituições e
                         <a href="/"
-                            class="text-purgatory font-text italic font-medium hover:text-radiation ">profissionais
+                            class="text-ink font-text italic font-medium hover:text-leaf ">profissionais
                             liberais</a>
                         na busca por um local para estagiar. Seu <a href="/"
-                            class="text-purgatory font-text italic font-medium hover:text-radiation ">professor
+                            class="text-ink font-text italic font-medium hover:text-leaf ">professor
                             orientador</a> pode
                         preencher uma carta de apresentação para que você possa se identificar junto aos possíveis
                         locais.
                         <br>
                         Caso as <a href="/"
-                            class="text-purgatory font-text italic font-medium hover:text-radiation ">instituições
+                            class="text-ink font-text italic font-medium hover:text-leaf ">instituições
                             convéniadas</a> ou <a href="/"
-                            class="text-purgatory font-text italic font-medium hover:text-radiation ">profissionais
+                            class="text-ink font-text italic font-medium hover:text-leaf ">profissionais
                             liberais</a>
                         não tenha um convenio ativo com o IFNMG-Almenara,
                         o <a href="/"
-                            class="text-purgatory font-text italic font-medium hover:text-radiation ">representant
+                            class="text-ink font-text italic font-medium hover:text-leaf ">representant
                             legal</a>
                         da empresa ou o profissional liberal deve preencher o
-                        <a href="/" class="text-purgatory font-text italic font-medium hover:text-radiation ">Termo
+                        <a href="/" class="text-ink font-text italic font-medium hover:text-leaf ">Termo
                             de Convênio</a>
-                        ou a <a href="/" class="text-purgatory font-text italic font-medium hover:text-radiation ">
+                        ou a <a href="/" class="text-ink font-text italic font-medium hover:text-leaf ">
                             Ficha de Cadastro de Profissional Liberal</a>
                         em duas vias, quem deveram ser encaminhadas ao núcleo de estágio por meio do aluno. O núcleo
                         de estágio irá avaliar o documento, caso não haja problemas, uma das vias serà entregue ao
@@ -95,7 +95,7 @@
             </div>
             <h2 id="accordion-color-heading-3">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-purgatory border border-b-0 border-purgatory-200 focus:ring-4 focus:ring-purgatory-200 hover:bg-afterlife gap-3"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-ink border border-b-0 border-ink-200 focus:ring-4 focus:ring-ink-200 hover:bg-paper gap-3"
                     data-accordion-target="#accordion-color-body-3" aria-expanded="false"
                     aria-controls="accordion-color-body-3">
                     <span>3º Passo - Termo de Compromisso e Plano de Estágio</span>
@@ -107,11 +107,11 @@
                 </button>
             </h2>
             <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
-                <div class="p-5 border border-t-0 border-purgatory-200 dark:border-purgatory-700">
-                    <p class="mb-2 text-purgatory dark:text-purgatory-400">O próximo passo é a celebração do
-                        <a href="/" class="text-purgatory font-text italic font-medium hover:text-radiation ">Termo de
+                <div class="p-5 border border-t-0 border-ink-200 dark:border-ink-700">
+                    <p class="mb-2 text-ink dark:text-ink-400">O próximo passo é a celebração do
+                        <a href="/" class="text-ink font-text italic font-medium hover:text-leaf ">Termo de
                             Compromisso de Estágio </a>
-                        e do <a href="/" class="text-purgatory font-text italic font-medium hover:text-radiation ">Plano
+                        e do <a href="/" class="text-ink font-text italic font-medium hover:text-leaf ">Plano
                             de Estágio</a>.
                         O Termo de Compromisso é o documento que formaliza o acordo entre a instituição Concedente do
                         estágio,
@@ -125,7 +125,7 @@
             </div>
             <h2 id="accordion-color-heading-4">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-purgatory border border-b-0 border-purgatory-200 focus:ring-4 focus:ring-purgatory-200 hover:bg-afterlife gap-3"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-ink border border-b-0 border-ink-200 focus:ring-4 focus:ring-ink-200 hover:bg-paper gap-3"
                     data-accordion-target="#accordion-color-body-4" aria-expanded="false"
                     aria-controls="accordion-color-body-4">
                     <span>4º Passo - Realizar o Estágio</span>
@@ -137,11 +137,11 @@
                 </button>
             </h2>
             <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-3">
-                <div class="p-5 border border-t-0 border-purgatory-200 dark:border-purgatory-700">
-                    <p class="mb-2 text-purgatory dark:text-purgatory-400">Proximum gradum est celebratio
-                        <a href="/" class="text-purgatory font-text italic font-medium hover:text-radiation ">Terminus
+                <div class="p-5 border border-t-0 border-ink-200 dark:border-ink-700">
+                    <p class="mb-2 text-ink dark:text-ink-400">Proximum gradum est celebratio
+                        <a href="/" class="text-ink font-text italic font-medium hover:text-leaf ">Terminus
                             Obligationis Stagii</a>
-                        et <a href="/" class="text-purgatory font-text italic font-medium hover:text-radiation ">Plani
+                        et <a href="/" class="text-ink font-text italic font-medium hover:text-leaf ">Plani
                             Stagii</a>.
                         Terminus Obligationis documentum est quod formalizat pactum inter institutionem Concedentem,
                         IFNMG-Almenara et Alumnum (vel suos tutores legales pro minoribus XVIII annis).
@@ -153,7 +153,7 @@
             </div>
             <h2 id="accordion-color-heading-5">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-purgatory border border-b-0 border-purgatory-200 focus:ring-4 focus:ring-purgatory-200 hover:bg-afterlife gap-3"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-ink border border-b-0 border-ink-200 focus:ring-4 focus:ring-ink-200 hover:bg-paper gap-3"
                     data-accordion-target="#accordion-color-body-5" aria-expanded="false"
                     aria-controls="accordion-color-body-5">
                     <span>5º Passo - Finalizar Estágio</span>
@@ -165,12 +165,12 @@
                 </button>
             </h2>
             <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-3">
-                <div class="p-5 border border-t-0 border-purgatory-200 dark:border-purgatory-700">
-                    <p class="mb-2 text-purgatory dark:text-purgatory-400">Ultimus gradus est completio
-                        <a href="/" class="text-purgatory font-text italic font-medium hover:text-radiation ">Termini
+                <div class="p-5 border border-t-0 border-ink-200 dark:border-ink-700">
+                    <p class="mb-2 text-ink dark:text-ink-400">Ultimus gradus est completio
+                        <a href="/" class="text-ink font-text italic font-medium hover:text-leaf ">Termini
                             Finalis Stagii</a>
                         et <a href="/"
-                            class="text-purgatory font-text italic font-medium hover:text-radiation ">Relationis Finalis
+                            class="text-ink font-text italic font-medium hover:text-leaf ">Relationis Finalis
                             Stagii</a>.
                         Terminus Finalis est documentum quod indicat omnes condiciones propositi stagii esse completum.
                         Hoc includit descriptionem activitatum peractorum, confirmationem de onere horario completo,
