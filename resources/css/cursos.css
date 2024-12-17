@@ -1,0 +1,27 @@
+@tailwind components;
+
+@layer components {
+  .table {
+    @apply w-full border-collapse table-fixed text-left;
+  }
+
+  .table-header {
+    @apply p-3 border border-paper text-center bg-leaf text-paper font-bold;
+  }
+
+  .table-cell {
+    @apply p-3 border border-paper text-center;
+  }
+
+  .table-line {
+    @apply hover:bg-paper;
+  }
+
+  .col-curso {
+    @apply w-9/12;
+  }
+
+  .col-carga {
+    @apply w-3/12;
+  }
+}
