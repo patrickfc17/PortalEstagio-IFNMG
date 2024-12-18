@@ -5,7 +5,7 @@ namespace App\Traits;
 use Illuminate\Contracts\Validation\Validator;
 use Override;
 
-trait BojackOnFail
+trait BojacksOnFail
 {
     #[Override]
     protected function failedValidation(Validator $validator)

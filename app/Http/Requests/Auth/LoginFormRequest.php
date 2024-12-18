@@ -3,12 +3,12 @@
 namespace App\Http\Requests\Auth;
 
 use App\Rules\StrongPassword;
-use App\Traits\BojackOnFail;
+use App\Traits\BojacksOnFail;
 use Illuminate\Foundation\Http\FormRequest;
 
 class LoginFormRequest extends FormRequest
 {
-    use BojackOnFail;
+    use BojacksOnFail;
 
     /**
      * Determine if the user is authorized to make this request.
