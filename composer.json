@@ -32,6 +32,10 @@
     "pestphp/pest-plugin-laravel": "^3.0"
   },
   "autoload": {
+    "files": [
+      "app/Helpers/enums.php",
+      "app/Helpers/random.php"
+    ],
     "psr-4": {
       "App\\": "app/",
       "Database\\Factories\\": "database/factories/",
