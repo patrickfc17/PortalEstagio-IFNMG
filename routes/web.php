@@ -20,6 +20,10 @@ Route::middleware('guest')->group(function () {
 });
 
 
+Volt::route('dashboard', 'pages.concedentes.dashboard')
+    ->name('dashboard');
+
+
 require __DIR__ . '/auth.php';
 
 require __DIR__ . '/concedentes.php';
