@@ -6,7 +6,7 @@
                     class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
                     Lista de Convênios</h1>
                 <p
-                    class="max-w-2xl mb-6 font-light text-ink lg:mb-8 md:text-lg lg:text-xl dark:text-paper-400">
+                    class="max-w-2xl mb-7 text-ink lg:mb-8 md:text-lg lg:text-xl dark:text-paper-400">
                     O
                     processo para realização do estágio é composto por
                     uma série de passos que devem ser seguidos adequadamente.</p>
@@ -16,11 +16,11 @@
             </div>
         </div>
         <h1
-            class="grid max-w-2xl max-w-screen-xl px-4 py-4 mx-auto mb-4 text-4xl font-medium leading-none tracking-tight md:text-3xl xl:text-6xl">
+            class="max-w-2xl mb-4 text-4xl font-medium tracking-tight leading-none md:text-3xl xl:text-6xl grid max-w-screen-xl py-5 mx-auto">
             Encontre Parceiros Conveniados</h1>
 
-        <div class="max-w-screen-xl px-4 pb-12 mx-auto lg:px-12">
-            <div class="relative overflow-hidden shadow-md bg-paper shadow-ink sm:rounded-lg">
+        <div class="grid max-w-screen-xl mx-auto">
+            <div class="bg-white relative shadow-lg shadow-leaf sm:rounded-lg overflow-hidden">
                 <div
                     class="flex flex-col items-center justify-between p-4 space-y-3 md:flex-row md:space-y-0 md:space-x-4">
                     <div class="w-full md:w-1/2">
