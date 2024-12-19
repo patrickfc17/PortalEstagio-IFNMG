@@ -13,6 +13,6 @@ class EstagiariosSeeder extends Seeder
      */
     public function run(): void
     {
-        Estagiario::factory(User::count())->create();
+        Estagiario::factory(User::count() - 1)->create();
     }
 }

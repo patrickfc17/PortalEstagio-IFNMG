@@ -13,6 +13,8 @@ class Estagiario extends Model
 {
     use HasFactory, Randomizes;
 
+    protected $hidden = [];
+
     protected function telefoneFixo(): Attribute
     {
         return Attribute::make(

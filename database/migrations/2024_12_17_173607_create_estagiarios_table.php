@@ -18,6 +18,8 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(User::class, 'user_id')
                 ->unique();
+            $table->string('naturalidade', 100);
+            $table->string('uf', 2);
             $table->date('data_nascimento');
             $table->enum('estado_civil', cases(EstadosCivisEnum::class));
             $table->enum('sexo', cases(SexosEnum::class));

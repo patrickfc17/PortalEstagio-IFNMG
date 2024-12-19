@@ -7,7 +7,7 @@
             <p class="mb-8 text-lg font-light text-ink">
                 Cada um dos cursos oferecidos pelo IFNMG - Almenara tem sua carga horária de estágio definida em seus projetos pedagógicos. Clique no curso desejado para acessar a página correspondente e mais informações.
             </p>
-            <img src="https://mutantexis.wordpress.com/wp-content/uploads/2013/06/blog-mike-crianc3a7a.jpg" alt="Imagem ilustrativa da carga horária por curso" class="w-full max-w-md mx-auto rounded-lg shadow-lg">
+            <img src="{{ asset('img/ch-curso.jpg') }}" alt="Imagem ilustrativa da carga horária por curso" class="w-full max-w-md mx-auto rounded-lg shadow-lg">
         </div>
     </section>
     <section class="py-12 bg-paper">

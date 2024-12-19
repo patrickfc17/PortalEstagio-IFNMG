@@ -25,7 +25,9 @@ class EstagiarioFactory extends Factory
         static $users = [];
 
         return [
-            'user_id' => UserFactory::memoized(User::class, $users),
+            'user_id' => UserFactory::memoized(User::class, $users, 1),
+            'naturalidade' => fake()->city(),
+            'uf' => fake()->stateABBR(),
             'data_nascimento' => fake()->dateTimeInInterval(interval: '+15 years')->format('Y-m-d'),
             'estado_civil' => fake()->randomElement(cases(EstadosCivisEnum::class)),
             'sexo' => fake()->randomElement(cases(SexosEnum::class)),
