@@ -15,7 +15,7 @@
         <link rel="shortcut icon" href="{{ asset('img/logo-ifnmg.png') }}" type="image/x-icon" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/js/app.js?v=' . preg_replace('/[^0-9]/s', '', now())])
     </head>
     <body class="relative grid min-h-screen grid-cols-1 font-sans antialiased bg-paper auto-rows-[max-content_83%_max-content]">
         <livewire:layout.navigation class="row-start-1 row-end-2" />

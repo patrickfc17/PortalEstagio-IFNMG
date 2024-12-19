@@ -19,7 +19,7 @@
                 @endsession
             </div>
             <div class="mt-8 md:mt-0">
-                <img src="https://via.placeholder.com/300x200" alt="Imagem relacionada ao estágio" class="object-cover h-40 rounded-lg shadow-lg w-72">
+                <img src="{{ asset('img/default.jpg') }}" alt="Imagem relacionada ao estágio" class="object-cover h-40 rounded-lg shadow-lg w-72">
             </div>
         </div>
     </section>
