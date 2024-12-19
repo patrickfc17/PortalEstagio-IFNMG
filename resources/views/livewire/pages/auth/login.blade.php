@@ -1,9 +1,3 @@
-@php
-    use function Livewire\Volt\layout;
-
-    layout('layouts.guest');
-@endphp
-
 <main class="flex flex-col w-screen h-screen gap-12 lg:flex-row xl:gap-0">
     <livewire:login.banner class="w-full lg:w-1/2 xl:w-2/3 h-1/2 lg:h-full lg:bg-center opacity-90" />
 

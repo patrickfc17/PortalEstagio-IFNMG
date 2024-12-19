@@ -17,7 +17,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="relative grid min-h-screen grid-cols-1 font-sans antialiased bg-paper auto-rows-[minmax(5%,_max-content)_85%_minmax(10%,_max-content)]">
+    <body class="relative grid min-h-screen grid-cols-1 font-sans antialiased bg-paper auto-rows-[max-content_83%_max-content]">
         <livewire:layout.navigation class="row-start-1 row-end-2" />
 
         <main>

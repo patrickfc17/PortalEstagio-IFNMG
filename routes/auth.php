@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Livewire\Pages\Login;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
@@ -34,3 +35,9 @@ Route::middleware('auth')->group(function () {
     Volt::route('confirm-password', 'pages.auth.confirm-password')
         ->name('password.confirm');
 });
+
+Route::get('logout', function (): RedirectResponse {
+    session()->remove('jwt');
+
+    return to_route('/');
+})->name('logout');

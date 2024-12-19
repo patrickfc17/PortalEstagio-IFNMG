@@ -15,13 +15,13 @@
         <link rel="shortcut icon" href="{{ asset('img/logo-ifnmg.png') }}" type="image/x-icon" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/bootstrap.js'])
 
         <!-- Livewire -->
         @livewireStyles
         @livewireScripts
     </head>
-    <body class="font-ibm-plex-sans text-gray-900 bg-paper antialiased">
+    <body class="antialiased text-gray-900 font-ibm-plex-sans bg-paper">
         {{ $slot }}
 
         <x-flash-message />

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 
-class Cors
+class CorsMiddleware
 {
     /**
      * Handle an incoming request.
@@ -17,8 +17,9 @@ class Cors
     public function handle(Request $request, Closure $next): Response
     {
         $response = $next($request);
+
         $response->headers = new ResponseHeaderBag([
-            'Access-Control-Allow-Origin' => '*',
+            'Access-Control-Allow-Origin'  => '*',
             'Access-Control-Allow-Methods' => 'GET, POST, PUT, PATCH, DELETE, HEAD',
             'Access-Control-Allow-Headers' => 'Accept, Authorization, Content-Type'
         ]);

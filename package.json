@@ -8,7 +8,6 @@
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
         "autoprefixer": "^10.4.20",
-        "axios": "^1.7.4",
         "chokidar": "^4.0.1",
         "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^1.0",
@@ -19,6 +18,7 @@
     "dependencies": {
         "@alpinejs/mask": "^3.14.3",
         "alpinejs": "^3.14.3",
+        "axios": "^1.7.9",
         "flowbite": "^2.5.2"
     }
 }
