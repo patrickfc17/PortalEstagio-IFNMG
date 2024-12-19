@@ -26,6 +26,10 @@ Volt::route('faqs', 'pages.espaço-de-perguntas-frequentes')
 Volt::route('ch-cursos', 'pages.exibicao-curso')
     ->name('ch-cursos');
 
+Volt::route('dashboard', 'pages.concedentes.dashboard')
+    ->name('dashboard');
+
+
 require __DIR__ . '/auth.php';
 
 require __DIR__ . '/concedentes.php';

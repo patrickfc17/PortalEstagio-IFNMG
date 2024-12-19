@@ -20,7 +20,7 @@
             Encontre Parceiros Conveniados</h1>
 
         <div class="grid max-w-screen-xl mx-auto">
-            <div class="bg-white relative shadow-lg shadow-leaf sm:rounded-lg overflow-hidden">
+            <div class="bg-white relative  sm:rounded-lg overflow-hidden">
                 <div
                     class="flex flex-col items-center justify-between p-4 space-y-3 md:flex-row md:space-y-0 md:space-x-4">
                     <div class="w-full md:w-1/2">
