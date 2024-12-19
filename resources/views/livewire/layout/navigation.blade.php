@@ -1,15 +1,3 @@
-<?php
-
-use App\Livewire\Actions\Logout;
-
-$logout = function (Logout $logout) {
-    $logout();
-
-    $this->redirect('/', navigate: true);
-};
-
-?>
-
 <nav x-data="{ open: false }" class="mb-0 border-b bg-leaf border-leaf">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-7">
         <div class="flex justify-between h-16">

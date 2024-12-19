@@ -17,8 +17,7 @@ it('Should GET the response of an API call', function () {
 });
 
 it('Should GET the filtered data through the API call', function () {
-        $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
-
+    $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
 
     $response = $apiService->get('/posts?userId=1');
     $body = $response->getBody()->getContents();
@@ -29,14 +28,14 @@ it('Should GET the filtered data through the API call', function () {
 });
 
 it('Should NOT GET the response of an API call with invalid endpoint', function () {
-        $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
+    $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
 
 
     $apiService->get('/summers');
 })->throws(RequestException::class);
 
 it('Should POST the data through the API call', function () {
-        $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
+    $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
 
     $post = [
         'userId' => 1,
@@ -51,7 +50,7 @@ it('Should POST the data through the API call', function () {
 });
 
 it('Should PUT the data through the API call', function () {
-        $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
+    $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
 
     $post = (object) [
         'id' => 1,
@@ -67,7 +66,7 @@ it('Should PUT the data through the API call', function () {
 });
 
 it('Should NOT PUT the data through the API call with invalid resource', function () {
-        $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
+    $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
 
     $post = (object) [
         'id' => 101,
@@ -80,7 +79,7 @@ it('Should NOT PUT the data through the API call with invalid resource', functio
 })->throws(RequestException::class);
 
 it('Should PATCH the data through the API call', function () {
-        $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
+    $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
 
     $post = (object) [
         'title' => 'Lorem ipsum dolor sit tamet consectetur, adipisicing tilet.',
@@ -93,7 +92,7 @@ it('Should PATCH the data through the API call', function () {
 });
 
 it('Should DELETE the data through the API call', function () {
-        $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
+    $apiService = APIService::instance(new Client(), 'https://jsonplaceholder.typicode.com');
 
 
     $response = $apiService->delete('/posts/1');
