@@ -12,7 +12,7 @@ class Sidebar extends Component
     {
         $this->items = [
             'Dashboard' => [
-                'route' => '',
+                'route' => 'dashboard',
                 'icon' => 'components.svg.dashboard'
             ],
             'Log Out' => [

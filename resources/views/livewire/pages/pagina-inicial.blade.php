@@ -9,7 +9,7 @@
                     Navegue pelo nosso site, tire suas dúvidas e compreenda o processo para realização do seu estágio.
                 </p>
                 @session('jwt')
-                    <a href="#" class="px-6 py-3 text-lg font-medium transition duration-300 rounded-lg shadow-md text-ink bg-paper hover:bg-grade hover:text-paper">
+                    <a href="{{ route('dashboard') }}" class="px-6 py-3 text-lg font-medium transition duration-300 rounded-lg shadow-md text-ink bg-paper hover:bg-grade hover:text-paper">
                         Dashboard
                     </a>
                 @else
