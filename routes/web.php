@@ -1,30 +1,24 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
-Volt::route('/', 'pages.pagina-inicial')
-    ->name('/');
+Route::middleware('guest')->group(function () {
+    Volt::route('/', 'pages.pagina-inicial')
+        ->name('/');
 
-Route::view('Principal', 'Principal')
-    ->middleware('auth')
-    ->name('Principal');
+    Volt::route('passo-a-passo', 'pages.passo-a-passo')
+        ->name('passo-a-passo');
 
-Route::view('profile', 'profile')
-    ->middleware(['auth'])
-    ->name('profile');
+    Volt::route('convenios', 'pages.listagem-de-convenio')
+        ->name('listagem-de-convenios');
 
-Volt::route('passo-a-passo', 'pages.passo-a-passo')
-    ->name('passo-a-Passo');
+    Volt::route('faqs', 'pages.espaço-de-perguntas-frequentes')
+        ->name('espaço-de-perguntas-frequentes');
 
-Volt::route('convenios', 'pages.listagem-de-convenio')
-    ->name('listagem-de-convenios');
+    Volt::route('ch-cursos', 'pages.exibicao-curso')
+        ->name('ch-cursos');
+});
 
-Volt::route('faqs', 'pages.espaço-de-perguntas-frequentes')
-    ->name('espaço-de-perguntas-frequentes');
-
-Volt::route('ch-cursos', 'pages.exibicao-curso')
-    ->name('ch-cursos');
 
 require __DIR__ . '/auth.php';
 

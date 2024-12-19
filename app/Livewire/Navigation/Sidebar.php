@@ -16,7 +16,7 @@ class Sidebar extends Component
                 'icon' => 'components.svg.dashboard'
             ],
             'Log Out' => [
-                'route' => '/',
+                'route' => 'logout',
                 'icon' => 'components.svg.home'
             ],
         ];

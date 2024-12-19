@@ -8,9 +8,15 @@
                 <p class="mb-6 text-lg font-light">
                     Navegue pelo nosso site, tire suas dúvidas e compreenda o processo para realização do seu estágio.
                 </p>
-                <a href="{{ route('login') }}" class="px-6 py-3 text-lg font-medium transition duration-300 rounded-lg shadow-md text-ink bg-paper hover:bg-ink hover:text-paper">
-                    Iniciar Estágio
-                </a>
+                @session('jwt')
+                    <a href="#" class="px-6 py-3 text-lg font-medium transition duration-300 rounded-lg shadow-md text-ink bg-paper hover:bg-grade hover:text-paper">
+                        Dashboard
+                    </a>
+                @else
+                    <a href="{{ route('login') }}" class="px-6 py-3 text-lg font-medium transition duration-300 rounded-lg shadow-md text-ink bg-paper hover:bg-grade hover:text-paper">
+                        Iniciar Estágio
+                    </a>
+                @endsession
             </div>
             <div class="mt-8 md:mt-0">
                 <img src="https://via.placeholder.com/300x200" alt="Imagem relacionada ao estágio" class="object-cover h-40 rounded-lg shadow-lg w-72">
