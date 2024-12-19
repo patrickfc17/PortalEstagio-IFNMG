@@ -1,4 +1,6 @@
 <section class="{{ $classes }}">
+    @vite(['resources/js/jwt.js'])
+
     <div class="flex items-end justify-center grid-col-span-1 grid-row-span-1">
         <h1 class="w-full text-xl font-semibold text-center h-fit xl:w-2/3 @if ($error) text-grade text-lg 2xl:text-xl @else text-leaf 2xl:text-3xl @endif">
             {{ $welcome }}
@@ -67,4 +69,12 @@
             </x-primary-button>
         </div>
     </form>
+
+    @script
+        <script>
+            $wire.on('token-set', e => {
+                window.localStorage.setItem('jwt', e.pop().jwt)
+            })
+        </script>
+    @endscript
 </section>

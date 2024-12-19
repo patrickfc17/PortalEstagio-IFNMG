@@ -8,8 +8,8 @@ use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Layout('layouts.login')]
 #[Title('Login')]
+#[Layout('layouts.login')]
 class Login extends Component
 {
     public function render(): Factory|View

@@ -21,6 +21,8 @@ class Form extends Component
 
     public string $classes = '';
 
+    public string $token = '';
+
     public LoginForm $form;
 
     private IAPIService $api;
@@ -56,6 +58,7 @@ class Form extends Component
                 ->access_token;
 
             session()->push('jwt', $jwt);
+            $this->dispatch('token-set', ['jwt' => $jwt]);
 
             $this->welcome = 'Sucesso! Redirecionando...';
             $this->title = '';
