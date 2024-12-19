@@ -29,6 +29,8 @@ Route::middleware('guest')->group(function () {
         ->name('regulamento-download');
 });
 
+Volt::route('dashboard', 'pages.concedentes.dashboard')
+    ->name('dashboard');
 
 Volt::route('dashboard', 'pages.concedentes.dashboard')
     ->name('dashboard');

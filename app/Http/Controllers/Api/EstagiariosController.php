@@ -36,6 +36,8 @@ class EstagiariosController extends Controller
             $user->name = $informacoesPessoais->estagiario['nome'];
             unset($informacoesPessoais->estagiario['nome']);
 
+            $user->save();
+
             DB::beginTransaction();
 
             $payload['estagiario'] = Estagiario::factory()->create(['user_id' => JWTAuth::payload()->get('sub'), ...$informacoesPessoais->estagiario]);
