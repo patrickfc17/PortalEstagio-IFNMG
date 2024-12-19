@@ -23,13 +23,16 @@
                     <x-nav-link :href="route('ch-cursos')" :active="request()->routeIs('ch-cursos')" wire:navigate>
                         {{ __('Carga Horária') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('legislacao')" :active="request()->routeIs('legislacao')" wire:navigate>
+                        {{ __('Legislação') }}
+                    </x-nav-link>
                     @if (!session()->get('jwt'))
                         <x-nav-link :href="route('login')" :active="request()->routeIs('login')" wire:navigate>
                             {{ __('Log In') }}
                         </x-nav-link>
                     @endif
                     @session('jwt')
-                        <x-nav-link :href="route('concedentes.pre-cadastro')" :active="request()->routeIs('concedentes.pre-cadastro')" wire:navigate>
+                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                             {{ __('Dashboard') }}
                         </x-nav-link>
                     @endsession

@@ -7,6 +7,8 @@ use App\Services\Contracts\IAPIService;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Console\View\Components\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Redirector;
 use Livewire\Component;
 
 use function Livewire\Volt\form;
@@ -46,7 +48,7 @@ class Form extends Component
         return view('livewire.login.form');
     }
 
-    public function login(): void
+    public function login(): Redirector|RedirectResponse|null
     {
         $this->form->validate();
 
@@ -63,10 +65,14 @@ class Form extends Component
             $this->welcome = 'Sucesso! Redirecionando...';
             $this->title = '';
             $this->error = false;
+
+            return to_route('dashboard');
         } catch (RequestException) {
             $this->welcome = 'Este Usuário Não Está Cadastrado No Sistema.';
             $this->title = 'Por favor, Contate o Suporte.';
             $this->error = true;
         }
+
+        return null;
     }
 }

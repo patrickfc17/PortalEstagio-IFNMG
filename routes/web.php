@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DownloadController;
 use Livewire\Volt\Volt;
 
 Route::middleware('guest')->group(function () {
@@ -17,6 +18,15 @@ Route::middleware('guest')->group(function () {
 
     Volt::route('ch-cursos', 'pages.exibicao-curso')
         ->name('ch-cursos');
+
+    Volt::route('legislacao', 'pages.legislacao')
+        ->name('legislacao');
+
+    Route::get('legislacao-download', [DownloadController::class, 'legislacao'])
+        ->name('legislacao-download');
+
+    Route::get('regulamento-download', [DownloadController::class, 'regulamento'])
+        ->name('regulamento-download');
 });
 
 
